@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://app.klob.com.br/api'
 
       def self.trade_page_url(args={})
-        'https://app.klob.com.br/market/#{args[:base].upcase}-#{args[:target].upcase}'
+        'https://app.klob.com.br/market/#{args[:base]}-#{args[:target]}'
       end
     end
   end
